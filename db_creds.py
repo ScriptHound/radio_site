@@ -12,7 +12,9 @@ MONGO_USER = os.getenv('MONGO_USER')
 MONGO_PASSWORD = os.getenv('MONGO_PASSWORD')
 MONGO_DATABASE = os.getenv('MONGO_DATABASE')
 MONGO_PORT = os.getenv('MONGO_PORT')
-MONGO_HOST = os.getenv('HOST')
+MONGO_HOST = os.getenv('MONGO_HOST')
+
+print(MONGO_USER)
 
 session = ThreadLocalODMSession(
     bind=create_datastore(
